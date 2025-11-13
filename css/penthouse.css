@@ -1,0 +1,149 @@
+body {
+  background-color: #000;
+  color: white;
+  margin: 0;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between; /* espace entre le titre et le menu */
+  align-items: center; /* centre verticalement */
+  background: linear-gradient(rgb(241, 173, 15), rgb(24, 22, 22));
+  padding: 10px 30px;
+}
+
+h1 {
+  margin: 0;
+}
+
+/* Liste de navigation à droite */
+ul {
+  list-style: none; /* enlève les puces */
+  display: flex;
+  gap: 20px; /* espace entre les éléments */
+  margin: 0;
+  padding: 0;
+}
+
+/* Liens du menu */
+li {
+  transition: color 0.3s;
+}
+
+li:hover {
+  color: gold;
+}
+
+/* Hera Palace partie */
+
+.tour {
+  margin-top: 5%;
+  padding: 20px;
+  position: relative; /* permet de placer le texte par-dessus */
+}
+
+.tour li a {
+  text-decoration: none;
+  color: gold;
+}
+
+.tour li {
+  list-style: none;
+  margin-bottom: -1%;
+}
+
+.tour h2 {
+  color: gold;
+}
+.penthouse-img {
+  text-align: center;
+  width: 100%;
+}
+
+.resume {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.resume h2 {
+  color: gold;
+  margin-left: 8%;
+}
+.resume p {
+  margin-left: 8%;
+  min-width: 600px;
+  max-width: 600px;
+}
+
+.pent-jaune {
+  color: gold;
+}
+
+.resume h3 {
+  margin-left: 8%;
+  color: gold;
+}
+
+/* placement de l'image */
+.img-seol-a {
+  margin-left: 60%;
+  margin-top: -10%;
+}
+/*                      */
+/* box des personnages*/
+/*                  */
+.perso h2 {
+  margin-left: 8%;
+  color: gold;
+}
+
+.perso img {
+  margin-top: 1%;
+  margin-left: 8%;
+  border: 3px solid gold;
+}
+
+.description-perso {
+  display: flex;
+  margin-left: 8%;
+  gap: 130px;
+}
+.description-perso p {
+  /* couleur */
+  border: 3px solid rgb(0, 0, 0);
+  background-color: gold;
+  color: black;
+
+  /* pr centrer le txt et qu'il prenne tt la place de la box */
+  display: flex;
+  text-align: center;
+  align-items: center;
+
+  /* alignement du txt */
+  min-width: 230px;
+  max-width: 230px;
+  min-height: 100px;
+  max-height: 100px;
+}
+/* recentrage du txt */
+.seo-jin {
+  margin-left: 1%;
+}
+
+.ryjeon {
+  margin-top: 1%;
+  margin-left: 2%;
+  background-color: gold;
+  color: rgb(0, 0, 0);
+
+  /* pr centrer le txt et qu'il prenne tt la place de la box */
+  display: flex;
+  text-align: center;
+  align-items: center;
+
+  /* alignement */
+  min-width: 200px;
+  max-width: 200px;
+  min-height: 100px;
+  max-height: 100px;
+}
