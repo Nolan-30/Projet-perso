@@ -138,13 +138,22 @@ li {
   text-align: center;
 }
 
-.nom-perso p:hover {
+.nom-perso a {
+  text-decoration: none;
+  color: white;
+}
+
+.nom-perso a:hover {
   color: gold;
 }
 
-/* Modification: Appliquer la bordure aux images uniquement */
+/* qd je passe sur le prenom des prsng et leur description ca passe en jaune */
+.personnage-carte p:hover {
+  color: gold;
+}
+
 .personnage-carte img {
-  border: 3px solid red (255, 255, 255);
+  border: 3px solid rgb(73, 73, 73);
   border-radius: 16px;
 }
 
@@ -155,7 +164,7 @@ li {
 }
 .description-perso p {
   /* couleur */
-  border: 3px solid rgb(255, 255, 255);
+  border: 3px solid rgb(73, 73, 73);
   border-radius: 10px;
 
   color: rgb(255, 255, 255);
@@ -168,29 +177,6 @@ li {
   /* alignement du txt */
   min-width: 230px;
   max-width: 230px;
-  min-height: 100px;
-  max-height: 100px;
-}
-/* recentrage du txt */
-.seo-jin {
-  margin-left: 1%;
-}
-
-.ryjeon {
-  margin-top: 1%;
-  margin-left: 2%;
-  border: 3px solid white;
-
-  color: rgb(255, 255, 255);
-
-  /* pr centrer le txt et qu'il prenne tt la place de la box */
-  display: flex;
-  text-align: center;
-  align-items: center;
-
-  /* alignement */
-  min-width: 200px;
-  max-width: 200px;
   min-height: 100px;
   max-height: 100px;
 }
