@@ -28,11 +28,11 @@ ul {
 
 /* Liens du menu */
 li {
-  transition: color 0.3s;
+  transition: color 1s;
 }
 
-li:hover {
-  color: gold;
+.tour li a:hover {
+  color: rgb(255, 0, 0);
 }
 
 /* Hera Palace partie */
@@ -59,6 +59,7 @@ li:hover {
 .penthouse-img {
   text-align: center;
   width: 100%;
+  border-radius: 10px; /* arrondi l'image du penthouse */
 }
 
 .resume {
@@ -84,10 +85,23 @@ li:hover {
   color: gold;
 }
 
+.resume a {
+  color: gold;
+  text-decoration: none;
+}
+
+.resume a:hover {
+  color: cyan;
+}
+
 /* placement de l'image */
 .img-seol-a {
   margin-left: 60%;
   margin-top: -10%;
+}
+
+.img-seol-a img {
+  border-radius: 10px;
 }
 /*                      */
 /* box des personnages*/
@@ -95,12 +109,43 @@ li:hover {
 .perso h2 {
   margin-left: 8%;
   color: gold;
+  font-size: 30px;
+  font-style: oblique;
+  text-decoration: underline;
 }
 
-.perso img {
+.personnages-container {
+  display: flex; /* Active Flexbox */
+  justify-content: flex-start; /* Commence l'alignement à gauche */
+  margin-left: 8%; /* Aligne avec le titre h2 */
+  gap: 110px; /* Ajoute un espacement entre les cartes (facultatif, mais recommandé) */
   margin-top: 1%;
-  margin-left: 8%;
-  border: 3px solid gold;
+  border-radius: 10px;
+}
+
+.personnage-carte {
+  display: flex;
+  flex-direction: column; /* Empile le nom et l'image verticalement */
+  align-items: center; /* Centre les éléments horizontalement */
+}
+
+.nom-perso {
+  color: rgb(255, 255, 255); /* Couleur d'or pour le nom */
+  font-style: oblique;
+  font-style: bold;
+  font-size: 20px;
+  margin: 10px 0 5px 0; /* Marge au-dessus et en dessous (plus petit en bas) */
+  text-align: center;
+}
+
+.nom-perso p:hover {
+  color: gold;
+}
+
+/* Modification: Appliquer la bordure aux images uniquement */
+.personnage-carte img {
+  border: 3px solid red (255, 255, 255);
+  border-radius: 16px;
 }
 
 .description-perso {
@@ -110,9 +155,10 @@ li:hover {
 }
 .description-perso p {
   /* couleur */
-  border: 3px solid rgb(0, 0, 0);
-  background-color: gold;
-  color: black;
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 10px;
+
+  color: rgb(255, 255, 255);
 
   /* pr centrer le txt et qu'il prenne tt la place de la box */
   display: flex;
@@ -133,8 +179,9 @@ li:hover {
 .ryjeon {
   margin-top: 1%;
   margin-left: 2%;
-  background-color: gold;
-  color: rgb(0, 0, 0);
+  border: 3px solid white;
+
+  color: rgb(255, 255, 255);
 
   /* pr centrer le txt et qu'il prenne tt la place de la box */
   display: flex;
